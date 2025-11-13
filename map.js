@@ -1,12 +1,13 @@
 console.log("map.js file is running!");
+
 // Import Mapbox as an ESM module
 import mapboxgl from 'https://cdn.jsdelivr.net/npm/mapbox-gl@2.15.0/+esm';
 
 // Check that Mapbox GL JS is loaded
 console.log('Mapbox GL JS Loaded:', mapboxgl);
 
-// 1. Set access token (Lab 7 gives you their token!)
-mapboxgl.accessToken = 'pk.eyJ1IjoiZHNjMTA2bWFwcyIsImEiOiJjbGd3bHRsb3EwNXRjM2xtdHFsYmE4ZDlkIn0.HmDmvYzu3n6PvJEa3TBUnQ';
+// 1. Set access token
+mapboxgl.accessToken = 'pk.eyJ1IjoizHNJMT...';  // your token
 
 // 2. Create the map
 const map = new mapboxgl.Map({
@@ -18,5 +19,5 @@ const map = new mapboxgl.Map({
 
 // Log when map loads
 map.on('load', () => {
-  console.log('🌍 Map is fully loaded!');
+  console.log('🌎 Map is fully loaded!');
 });
